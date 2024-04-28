@@ -1,6 +1,5 @@
 import dynamic from "next/dynamic";
 
-const Scene = dynamic(() => import("@/components/Scene"), { ssr: false });
 const CubeScene = dynamic(() => import("@/components/explosions/cube-scene"), {
   ssr: false,
 });

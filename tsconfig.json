@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -9,27 +13,31 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
-
     "jsx": "preserve",
     "incremental": true,
     //new//
-
     "allowSyntheticDefaultImports": true,
-
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-
-    "isolatedModules": false, //can change later
-
+    "isolatedModules": true, //can change later
     "plugins": [
       {
         "name": "next"
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": [
+        "./*"
+      ]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
